@@ -1,0 +1,96 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    padding: 20px 0px;
+    background: rgb(65, 1, 103);
+    display:flex;
+}
+.header h2{
+    color: beige;
+}
+.header ul{
+    display:flex;
+margin: auto;
+}
+.header ul li a{
+    color: rgb(172, 214, 250);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0 30px;
+     font-family: "Roboto Slab", serif;
+     font-weight: 700px;
+     transition: .5s;
+}
+.header ul li a:hover{
+    color: black;
+}
+.banner{
+    background: url(../images.jpg/c47cd0cd-559f-4fd3-b10f-94e831de6b9f.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.overly{
+    padding: 300px 0px;
+    background-color: rgba(11, 2, 33, 0.7);
+    text-align: center;
+    color: aliceblue;
+}
+.overly h1{
+    display: inline-block;
+    border-bottom: 2px dashed black;
+    position: relative;
+}
+.overly h1::before{
+    position: absolute;
+    background: black;
+    height: 5px;
+    width: 50px;
+    top: 50%;
+    left: -30%;
+    transform: translateY(-50%);
+    content: "";
+}
+.overly h1::after{
+    position: absolute;
+    background: black;
+    height: 5px;
+    width: 50px;
+    top: 50%;
+    right: -30%;
+    transform: translateY(-50%);
+    content: "";
+}
+span{
+    position: relative;
+}
+
+span::before{
+    position: absolute;
+    background: black;
+    height: 50px;
+    width: 5px;
+    bottom:50%;
+    left:-21%;
+    transform: translate(-50%,-50%);
+    content: "";
+}
+span::after{
+    position: absolute;
+    background: black;
+    height: 50px;
+    width: 5px;
+    bottom:-250%;
+    left:-21%;
+    transform: translate(-50%,-50%);
+    content: "";
+}
